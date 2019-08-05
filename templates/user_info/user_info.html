@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>খরচ খুজুন </h1>
+
+<form action="/user/info/" method="post">
+        {% csrf_token %}
+        তোমার নাম কি ? <input type="text" name="user_name">
+        <input type="submit" value="ঠিক আছে">
+
+</form>
+
+{% endblock %}
